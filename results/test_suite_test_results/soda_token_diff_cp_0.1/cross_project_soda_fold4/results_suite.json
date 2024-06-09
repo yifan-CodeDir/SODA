@@ -1,1 +1,17 @@
-{"cola_token_diff_cp_0.1": {"test_sur_prec": 0.46670108415074857, "test_sur_recall": 0.5432692307692307, "test_sur_f1": 0.502082754790336, "test_sur_auc": 0.39391025641025645, "test_kill_prec": 0.7330523357920619, "test_kill_recall": 0.6689102564102564, "test_kill_f1": 0.6995139936316407, "test_kill_auc": 0.6060897435897437, "test_accuracy": 0.6252090301003345, "test_true_pos": 3120.0, "test_pre_pos": 2847.0, "test_mut_num": 4784, "test_mut_score": 0.057065217391304345, "test_time": 3681.761485815048}}
+{
+    "cola_token_diff_cp_0.1": {
+        "test_sur_prec": 0.46670108415074857,
+        "test_sur_recall": 0.5432692307692307,
+        "test_sur_f1": 0.502082754790336,
+        "test_sur_auc": 0.39391025641025645,
+        "test_kill_prec": 0.7330523357920619,
+        "test_kill_recall": 0.6689102564102564,
+        "test_kill_f1": 0.6995139936316407,
+        "test_kill_auc": 0.6060897435897437,
+        "test_accuracy": 0.6252090301003345,
+        "test_true_pos": 3120.0,
+        "test_pre_pos": 2847.0,
+        "test_mut_num": 4784,
+        "test_mut_score": 0.057065217391304345
+    }
+}

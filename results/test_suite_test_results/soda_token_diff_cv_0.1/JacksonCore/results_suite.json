@@ -12,7 +12,6 @@
         "test_true_pos": 3119.0,
         "test_pre_pos": 2943.0,
         "test_mut_num": 4784,
-        "test_mut_score": 0.03678929765886288,
-        "test_time": 2641.3150675296783
+        "test_mut_score": 0.03678929765886288
     }
 }
