@@ -62,7 +62,7 @@ Welcome to the website of SODA. This repository contains a replication package f
   - 1. `cd code/preprocessing`
   - 2. `python3 build_mutant_set_cross_version_with_hier_sample_pos.py` ; output: cross_version_base_set
   - 3. `python3 ./codet5_token_diff/mutants_to_dataset_cross_version.py` ; output: cross_version_soda
-- ##### Training model
+  - ##### Training model
   - 1. `cd /src/runtime/soda_cross_version`
   - 2. `bash run.sh`
 
@@ -76,7 +76,7 @@ Welcome to the website of SODA. This repository contains a replication package f
   - 1. `cd code/preprocessing`
   - 2. `python3 build_mutant_set_suite_cross_project.py` ; output: cross_project_suite_base_set_foldx
   - 3. `python3 ./pmt_baseline_suite/mutants_to_dataset_ordered.py` ; output: cross_project_suite_pmt_baseline_ordered_foldx
-- ##### Training model
+  - ##### Training model
   - 1. `cd /src/runtime/suite_cp`
   - 2. `bash run_pmt.sh`
 
@@ -85,7 +85,7 @@ Welcome to the website of SODA. This repository contains a replication package f
   - 1. `cd code/preprocessing`
   - 2. `python3 build_mutant_set_suite_cross_version.py` ; output: cross_version_suite_base_set
   - 3. `python3 ./pmt_baseline_suite/mutants_to_dataset_ordered_cross_version.py` ; output: cross_version_suite_pmt_baseline_ordered
-- ##### Training model
+  - ##### Training model
   - 1. `cd /src/runtime/suite_cv`
   - 2. `bash run_pmt.sh`
 
