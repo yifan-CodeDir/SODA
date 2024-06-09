@@ -1,0 +1,14 @@
+{
+    "seshat_cross_version_pmt_baseline": {
+        "test_kill_prec": 0.8304012219403759,
+        "test_kill_recall": 0.8723245752270709,
+        "test_kill_f1": 0.8508467944776703,
+        "test_kill_auc": 0.9022401263714321,
+        "test_sur_prec": 0.9504277497802845,
+        "test_sur_recall": 0.9321556775157936,
+        "test_sur_f1": 0.9412030406521978,
+        "test_sur_auc": 0.09775987362856778,
+        "test_accuracy": 0.9156552247297554,
+        "test_time": 69.4223484992981
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "seshat_cross_version_pmt_baseline": {
+        "val_kill_prec": 0.8273572377158035,
+        "val_kill_recall": 0.8610330634995368,
+        "val_kill_f1": 0.8438593096467857,
+        "val_kill_auc": 0.9096122954170394,
+        "val_sur_prec": 0.9673537250648465,
+        "val_sur_recall": 0.958191527334542,
+        "val_sur_f1": 0.9627508282525558,
+        "val_sur_auc": 0.0903877045829606,
+        "val_accuracy": 0.9398509174311926,
+        "test_kill_prec": 0.7832842490098507,
+        "test_kill_recall": 0.7862485505676677,
+        "test_kill_f1": 0.7847636005214461,
+        "test_kill_auc": 0.869130234441119,
+        "test_sur_prec": 0.9528073640205031,
+        "test_sur_recall": 0.9520119183145704,
+        "test_sur_f1": 0.9524094750798987,
+        "test_sur_auc": 0.13086976555888094,
+        "test_accuracy": 0.9220535471658138,
+        "test_time": 202.9716558456421
+    }
+}

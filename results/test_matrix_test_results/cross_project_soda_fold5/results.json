@@ -1,0 +1,22 @@
+{
+    "cross_project_codet5_contrastive_token_diff_noSCL_hier_rand20_sample_fold5": {
+        "val_kill_prec": 0.6223180712231807,
+        "val_kill_recall": 0.6215619131779521,
+        "val_kill_f1": 0.6219397623652942,
+        "val_kill_auc": 0.6603006534251441,
+        "val_sur_prec": 0.6983623877443211,
+        "val_sur_recall": 0.6990393936723363,
+        "val_sur_f1": 0.698700726712178,
+        "val_sur_auc": 0.33969934657485584,
+        "val_accuracy": 0.664656862745098,
+        "test_kill_prec": 0.49013034508627157,
+        "test_kill_recall": 0.7929530455890161,
+        "test_kill_f1": 0.6058068441946046,
+        "test_kill_auc": 0.649519625851237,
+        "test_sur_prec": 0.8032367358708189,
+        "test_sur_recall": 0.5060862061134578,
+        "test_sur_f1": 0.6209423500236841,
+        "test_sur_auc": 0.3504803741487631,
+        "test_accuracy": 0.6135227272727273
+    }
+}

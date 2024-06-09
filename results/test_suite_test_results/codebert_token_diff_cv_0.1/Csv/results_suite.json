@@ -1,0 +1,18 @@
+{
+    "codebert_token_diff_cv_0.1": {
+        "test_sur_prec": 0.47029702970297027,
+        "test_sur_recall": 0.5974842767295597,
+        "test_sur_f1": 0.5263157894736842,
+        "test_sur_auc": 0.38385171829051024,
+        "test_kill_prec": 0.744,
+        "test_kill_recall": 0.6348122866894198,
+        "test_kill_f1": 0.6850828729281768,
+        "test_kill_auc": 0.6161482817094898,
+        "test_accuracy": 0.6216814159292036,
+        "test_true_pos": 293.0,
+        "test_pre_pos": 250.0,
+        "test_mut_num": 452,
+        "test_mut_score": 0.09513274336283185,
+        "test_time": 382.41912174224854
+    }
+}

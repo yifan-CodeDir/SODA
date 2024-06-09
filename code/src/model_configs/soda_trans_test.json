@@ -1,0 +1,18 @@
+{
+    "num_rep_epochs": 20,
+    "num_cla_epochs": 10,
+    "cla_batch_size": 16,
+    "batch_size": 8,
+    "val_batch_size": 300,
+    "embedding_dim": 768,
+    "mutator_size":20,
+    "num_mutator_layers": 3,
+    "lr": 5e-5,
+    "lr_2": 1e-5,
+    "lambda": 0.9,
+    "temperature": 0.3,
+    "checkpoint_threshold": 1,
+    "gru_embedding_dim": 192,
+    "accum_iter": 8,
+    "pretrained_model_path":"/xxx/huggingface/models--salesforce--codet5-base"
+}

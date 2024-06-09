@@ -1,0 +1,23 @@
+{
+    "cross_version_codebert_token_diff": {
+        "val_kill_prec": 0.8430149735667479,
+        "val_kill_recall": 0.933370719568189,
+        "val_kill_f1": 0.885894876912841,
+        "val_kill_auc": 0.9362504704396813,
+        "val_sur_prec": 0.9757559526086901,
+        "val_sur_recall": 0.9391302213111736,
+        "val_sur_f1": 0.957092819614711,
+        "val_sur_auc": 0.06374952956031874,
+        "val_accuracy": 0.9376363636363636,
+        "test_kill_prec": 0.8002719269945153,
+        "test_kill_recall": 0.883503790769857,
+        "test_kill_f1": 0.8398307134220072,
+        "test_kill_auc": 0.8983709115420551,
+        "test_sur_prec": 0.952205498611778,
+        "test_sur_recall": 0.9132380323142532,
+        "test_sur_f1": 0.9323147675012775,
+        "test_sur_auc": 0.10162908845794497,
+        "test_accuracy": 0.9048419540229885,
+        "test_time": 762.865549325943
+    }
+}

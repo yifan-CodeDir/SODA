@@ -1,0 +1,22 @@
+{
+    "cross_project_codebert_token_diff_fold4": {
+        "val_kill_prec": 0.6250217807980485,
+        "val_kill_recall": 0.39648502265944513,
+        "val_kill_f1": 0.48518869200595155,
+        "val_kill_auc": 0.603465800328225,
+        "val_sur_prec": 0.6275833844894618,
+        "val_sur_recall": 0.8104465779970051,
+        "val_sur_f1": 0.7073883293611133,
+        "val_sur_auc": 0.39653419967177483,
+        "val_accuracy": 0.6268627450980392,
+        "test_kill_prec": 0.35997865025666786,
+        "test_kill_recall": 0.5849446456813427,
+        "test_kill_f1": 0.44568185572821006,
+        "test_kill_auc": 0.5894304295758653,
+        "test_sur_prec": 0.7856229989854939,
+        "test_sur_recall": 0.5939162134703878,
+        "test_sur_f1": 0.676449400727182,
+        "test_sur_auc": 0.41056957042413467,
+        "test_accuracy": 0.5913968481375358
+    }
+}

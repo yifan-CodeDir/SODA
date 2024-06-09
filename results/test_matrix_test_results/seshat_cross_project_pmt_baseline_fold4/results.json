@@ -1,0 +1,22 @@
+{
+    "seshat_cross_project_pmt_baseline_fold4": {
+        "val_kill_prec": 0.45486782720825275,
+        "val_kill_recall": 0.3063395570994355,
+        "val_kill_f1": 0.36611312921639855,
+        "val_kill_auc": 0.5096457588586635,
+        "val_sur_prec": 0.5679513184584178,
+        "val_sur_recall": 0.7129519606178917,
+        "val_sur_f1": 0.6322444678609063,
+        "val_sur_auc": 0.49035424114133636,
+        "val_accuracy": 0.5345336762884634,
+        "test_kill_prec": 0.3302968402068496,
+        "test_kill_recall": 0.4578337839906127,
+        "test_kill_f1": 0.38374616478335705,
+        "test_kill_auc": 0.5476832020811647,
+        "test_sur_prec": 0.7507183823788133,
+        "test_sur_recall": 0.6375326201717165,
+        "test_sur_f1": 0.6895114160907901,
+        "test_sur_auc": 0.4523167979188354,
+        "test_accuracy": 0.5870702005730659
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "pmt_baseline_cv_0.1": {
+        "test_sur_prec": 0.6093310848791456,
+        "test_sur_recall": 0.6510510510510511,
+        "test_sur_f1": 0.629500580720093,
+        "test_sur_auc": 0.28588838919072973,
+        "test_kill_prec": 0.8066555740432613,
+        "test_kill_recall": 0.7771721705674896,
+        "test_kill_f1": 0.7916394513389942,
+        "test_kill_auc": 0.7141116108092703,
+        "test_accuracy": 0.7332775919732442,
+        "test_true_pos": 3119.0,
+        "test_pre_pos": 3005.0,
+        "test_mut_num": 4784,
+        "test_mut_score": 0.023829431438127092,
+        "test_time": 3267.8899114131927
+    }
+}

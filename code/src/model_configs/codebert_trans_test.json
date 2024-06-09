@@ -1,0 +1,13 @@
+{
+    "num_epochs": 10,
+    "batch_size": 28,
+    "val_batch_size": 300,
+    "embedding_dim": 768,
+    "mutator_size":20,
+    "num_mutator_layers": 3,
+    "lr": 1e-5,
+    "checkpoint_threshold": 1,
+    "gru_embedding_dim": 192,
+    "accum_iter": 8,
+    "log_iter": 40000
+}

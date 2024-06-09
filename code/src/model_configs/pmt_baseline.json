@@ -1,0 +1,17 @@
+{
+    "num_epochs": 20,
+    "batch_size": 512,
+    "checkpoint_threshold": 1,
+    "lr": 3e-3,
+    "max_grad_norm": 5,
+    "name_embed_dim": 50,
+    "body_embed_dim": 50,
+    "gru_hidden_dim": 100,
+    "gru_num_layers": 2,
+    "att_dim": 50,
+    "dropout":0.5,
+    "accum_iter": 1,
+    "log_iter": 200,
+    "binarized_mutants": "YES", 
+    "model_type": "pmt_baseline"
+}

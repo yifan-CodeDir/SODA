@@ -1,0 +1,18 @@
+{
+    "cola_token_diff_cv_0.1": {
+        "test_sur_prec": 0.4888888888888889,
+        "test_sur_recall": 0.5116279069767442,
+        "test_sur_f1": 0.5,
+        "test_sur_auc": 0.30197499123524596,
+        "test_kill_prec": 0.8934010152284264,
+        "test_kill_recall": 0.8844221105527639,
+        "test_kill_f1": 0.8888888888888888,
+        "test_kill_auc": 0.698025008764754,
+        "test_accuracy": 0.8181818181818182,
+        "test_true_pos": 199.0,
+        "test_pre_pos": 197.0,
+        "test_mut_num": 242,
+        "test_mut_score": 0.008264462809917356,
+        "test_time": 107.47403168678284
+    }
+}

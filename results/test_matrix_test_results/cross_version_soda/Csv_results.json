@@ -1,0 +1,23 @@
+{
+    "codet5_contrastive_cross_version_token_diff_hier_rand20_sample": {
+        "val_kill_prec": 0.9571489181162495,
+        "val_kill_recall": 0.9757785467128027,
+        "val_kill_f1": 0.9663739558792033,
+        "val_kill_auc": 0.9734110623472271,
+        "val_sur_prec": 0.9837351147255301,
+        "val_sur_recall": 0.9710435779816514,
+        "val_sur_f1": 0.9773481460106767,
+        "val_sur_auc": 0.026588937652772947,
+        "val_accuracy": 0.9729310344827586,
+        "test_kill_prec": 0.8177999772959473,
+        "test_kill_recall": 0.7900855450756745,
+        "test_kill_f1": 0.8037039103028951,
+        "test_kill_auc": 0.8263473436729168,
+        "test_sur_prec": 0.8403802852139104,
+        "test_sur_recall": 0.8626091422701592,
+        "test_sur_f1": 0.8513496388290458,
+        "test_sur_auc": 0.17365265632708313,
+        "test_accuracy": 0.8308173076923077,
+        "test_time": 128.54613423347473
+    }
+}
