@@ -4,7 +4,7 @@ Run test-matrix level PMT evaluation on the [Codec project](https://github.com/a
 
 The project and generated mutants info is as follows.
 
-Line of Code: 68,906
+Line of Code: 34,453
 
 Number of Tests: 776
 
