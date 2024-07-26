@@ -9,4 +9,4 @@
 
 ## Too many assertions
 ![alt text](./figs/assertions.jpg "Too many assertions")
-### There are too many assertions in one test, which may confuse SODA.
+### There are too many assertions in one test, which may confuse SODA which one could kill the mutant.
