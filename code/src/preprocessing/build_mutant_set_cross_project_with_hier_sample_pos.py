@@ -425,17 +425,16 @@ def main(args, codet5_tokenizer, codebert_tokenizer):
     with open(args.test_file, "rb") as f:
         test_map = pickle.load(f) 
     
-    fold_num = 5
+    for fold_num in range(1,6):
+        set_name = f"cross_project_base_set_fold{fold_num}"
 
-    set_name = f"cross_project_soda_fold{fold_num}"
+        (Macros.defects4j_root_dir / set_name / "train").mkdir(exist_ok=True, parents=True)
+        (Macros.defects4j_root_dir / set_name / "train_pos").mkdir(exist_ok=True, parents=True)
+        (Macros.defects4j_root_dir / set_name / "val").mkdir(exist_ok=True, parents=True)
+        # (Macros.defects4j_root_dir / set_name / "test").mkdir(exist_ok=True, parents=True)
+        (Macros.defects4j_root_dir / set_name / "test").mkdir(exist_ok=True, parents=True)  ##### 
 
-    (Macros.defects4j_root_dir / set_name / "train").mkdir(exist_ok=True, parents=True)
-    (Macros.defects4j_root_dir / set_name / "train_pos").mkdir(exist_ok=True, parents=True)
-    (Macros.defects4j_root_dir / set_name / "val").mkdir(exist_ok=True, parents=True)
-    # (Macros.defects4j_root_dir / set_name / "test").mkdir(exist_ok=True, parents=True)
-    (Macros.defects4j_root_dir / set_name / "test").mkdir(exist_ok=True, parents=True)  ##### 
-
-    split_cp_fold(mutants, test_map, set_name, fold_num, codet5_tokenizer, codebert_tokenizer) 
+        split_cp_fold(mutants, test_map, set_name, fold_num, codet5_tokenizer, codebert_tokenizer) 
 
  
 if __name__ == "__main__":

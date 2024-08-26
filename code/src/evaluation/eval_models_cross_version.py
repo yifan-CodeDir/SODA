@@ -346,10 +346,7 @@ if __name__ == '__main__':
 
     utils.set_seed(Macros.random_seed)
 
-    # projects = ["Lang", "Chart", "Gson", "JacksonCore", "Csv", "Cli"]
-    # projects = ["Chart"]
-    # projects = ["Lang", "Gson"]
-    projects = ["JacksonCore", "Csv", "Cli"]
+    projects = ["Lang", "Chart", "Gson", "JacksonCore", "Csv", "Cli"]
 
     # if not os.path.exists(os.path.dirname(model_save_dir)):
     for project in projects:

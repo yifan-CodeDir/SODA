@@ -1,14 +1,22 @@
 {
     "seshat_cross_version_pmt_baseline": {
-        "test_kill_prec": 0.7832842490098507,
-        "test_kill_recall": 0.7862485505676677,
-        "test_kill_f1": 0.7847636005214461,
-        "test_kill_auc": 0.869130234441119,
-        "test_sur_prec": 0.9528073640205031,
-        "test_sur_recall": 0.9520119183145704,
-        "test_sur_f1": 0.9524094750798987,
-        "test_sur_auc": 0.13086976555888094,
-        "test_accuracy": 0.9220535471658138,
-        "test_time": 202.9716558456421
+        "val_kill_prec": 0.8252944679244187,
+        "val_kill_recall": 0.86302264477621,
+        "val_kill_f1": 0.8437370077804834,
+        "val_kill_auc": 0.9102554425194325,
+        "val_sur_prec": 0.9677831875319257,
+        "val_sur_recall": 0.9574882402626548,
+        "val_sur_f1": 0.9626081889629493,
+        "val_sur_auc": 0.0897445574805676,
+        "val_accuracy": 0.9396559633027523,
+        "test_kill_prec": 0.78235762392752,
+        "test_kill_recall": 0.7889371679047898,
+        "test_kill_f1": 0.7856336205255745,
+        "test_kill_auc": 0.8702609129428518,
+        "test_sur_prec": 0.9533533279826525,
+        "test_sur_recall": 0.9515846579809139,
+        "test_sur_f1": 0.952468171906872,
+        "test_sur_auc": 0.12973908705714818,
+        "test_accuracy": 0.9221894186084001
     }
 }

@@ -1,5 +1,5 @@
 {
-    "cola_token_diff_cv_0.1": {
+    "soda_token_diff_cv_0.1": {
         "test_sur_prec": 0.9196761478640674,
         "test_sur_recall": 0.9554006197432492,
         "test_sur_f1": 0.9371980676328503,

@@ -97,8 +97,8 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--src_set", help="source set", default="base_set_suite")
-    parser.add_argument("--dst_set", help="dest set", default="pmt_baseline_ordered_suite")
+    parser.add_argument("--src_set", help="source set", default="cross_version_suite_base_set")
+    parser.add_argument("--dst_set", help="dest set", default="cross_version_suite_pmt_baseline_ordered")
 
     args = parser.parse_args()
     utils.set_seed(Macros.random_seed)

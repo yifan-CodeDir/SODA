@@ -173,43 +173,6 @@ def eval_dataset_unary(model, device, dataloader):
     
     return labels_data, preds_data
 
-def get_dataset(dir):
-    # read all the files and record the features and the labels
-    X = []
-    y = []
-    for file in os.listdir(dir):
-        with open(os.path.join(dir, file), "rb") as f:
-            mutants = pickle.load(f)
-            for mutant in mutants:
-                x = [np.int64(mutant["num_executed"])] + list(mutant["mutator"]) + mutant["mut_static_features"] + [mutant["num_assert_in_tm"]]
-                X.append(x)
-                y.append(mutant["label"])
-    return np.array(X), np.array(y)
-
-def compute_feature_unary_stats(model_dir, device, model_details, model_name):
-    # get mean and std for standarization, NOTE: only use training data to calculate mean and std 
-    data, label = get_dataset(Macros.data_dir / model_details["data_name"] / "train")
-    # for doing Z-score standarization
-    mean = np.mean(data, axis=0)  
-    std = np.std(data, axis=0)
-
-    validation_dataset = HADataset(Macros.data_dir / model_details["data_name"] / "val", mean, std)
-    validation_dataloader = HADataLoader(validation_dataset, 100)
-    test_dataset = HADataset(Macros.data_dir / model_details["data_name"] / "test", mean, std)
-    test_dataloader = HADataLoader(test_dataset, 100)
-
-    model_dict = torch.load(model_dir / model_name / model_details["best_checkpoint"])
-    model = model_dict["model"].to(device)
-
-    val_labels, val_preds = eval_dataset_feature_unary(model, device, validation_dataloader)
-    test_labels, test_preds = eval_dataset_feature_unary(model, device, test_dataloader)
-
-    val_kill_precision, val_kill_recall, val_kill_f1, val_kill_auc, val_sur_precision, val_sur_recall, val_sur_f1, val_sur_auc, val_accuracy = compute_metrics(val_preds, val_labels)
-    test_kill_precision, test_kill_recall, test_kill_f1, test_kill_auc, test_sur_precision, test_sur_recall, test_sur_f1, test_sur_auc, test_accuracy = compute_metrics(test_preds, test_labels)
-
-    return {"val_kill_prec": val_kill_precision, "val_kill_recall": val_kill_recall, "val_kill_f1": val_kill_f1, "val_kill_auc": val_kill_auc, "val_sur_prec": val_sur_precision, "val_sur_recall": val_sur_recall, "val_sur_f1": val_sur_f1, "val_sur_auc": val_sur_auc, "val_accuracy": val_accuracy,  
-            "test_kill_prec": test_kill_precision, "test_kill_recall": test_kill_recall, "test_kill_f1": test_kill_f1, "test_kill_auc": test_kill_auc, "test_sur_prec": test_sur_precision, "test_sur_recall": test_sur_recall, "test_sur_f1": test_sur_f1, "test_sur_auc": test_sur_auc, "test_accuracy": test_accuracy}
-
 
 def compute_unary_stats(model_dir, device, model_details, model_name):
     validation_dataset = CodebertDataset(Macros.data_dir / model_details["data_name"] / "val")
@@ -247,29 +210,6 @@ def compute_unary_cl_stats(model_dir, device, model_details, model_name):
     # )
     val_labels, val_preds = eval_dataset_cl_unary(model, device, validation_dataloader)
     test_labels, test_preds = eval_dataset_cl_unary(model, device, test_dataloader)
-
-    val_kill_precision, val_kill_recall, val_kill_f1, val_kill_auc, val_sur_precision, val_sur_recall, val_sur_f1, val_sur_auc, val_accuracy = compute_metrics(val_preds, val_labels)
-    test_kill_precision, test_kill_recall, test_kill_f1, test_kill_auc, test_sur_precision, test_sur_recall, test_sur_f1, test_sur_auc, test_accuracy = compute_metrics(test_preds, test_labels)
-
-    return {"val_kill_prec": val_kill_precision, "val_kill_recall": val_kill_recall, "val_kill_f1": val_kill_f1, "val_kill_auc": val_kill_auc, "val_sur_prec": val_sur_precision, "val_sur_recall": val_sur_recall, "val_sur_f1": val_sur_f1, "val_sur_auc": val_sur_auc, "val_accuracy": val_accuracy,  
-            "test_kill_prec": test_kill_precision, "test_kill_recall": test_kill_recall, "test_kill_f1": test_kill_f1, "test_kill_auc": test_kill_auc, "test_sur_prec": test_sur_precision, "test_sur_recall": test_sur_recall, "test_sur_f1": test_sur_f1, "test_sur_auc": test_sur_auc, "test_accuracy": test_accuracy}
-
-def compute_unary_dual_cl_stats(model_dir, device, model_details, model_name):
-    validation_dataset = DualConDataset(Macros.data_dir / model_details["data_name"] / "val")
-    validation_dataloader = DualConDataLoader(validation_dataset, 300)
-    test_dataset = DualConDataset(Macros.data_dir / model_details["data_name"] / "test")
-    test_dataloader = DualConDataLoader(test_dataset, 300)
-
-    model_dict = torch.load(model_dir / model_name / model_details["best_checkpoint"])
-    model = model_dict["model"].to(device)
-
-    # optimizer = optim.AdamW(params=filter(lambda p: p.requires_grad, model.parameters()), lr=1e-5)
-
-    # model, optimizer, validation_dataloader, test_dataloader = args.accelerator.prepare(
-    #     model, optimizer, validation_dataloader, test_dataloader
-    # )
-    val_labels, val_preds = eval_dataset_dual_cl_unary(model, device, validation_dataloader)
-    test_labels, test_preds = eval_dataset_dual_cl_unary(model, device, test_dataloader)
 
     val_kill_precision, val_kill_recall, val_kill_f1, val_kill_auc, val_sur_precision, val_sur_recall, val_sur_f1, val_sur_auc, val_accuracy = compute_metrics(val_preds, val_labels)
     test_kill_precision, test_kill_recall, test_kill_f1, test_kill_auc, test_sur_precision, test_sur_recall, test_sur_f1, test_sur_auc, test_accuracy = compute_metrics(test_preds, test_labels)
@@ -418,10 +358,6 @@ def eval_all_models(config, device):
                 #     with open("results.json", "w") as f:
                 #         json.dump(aggregate_stats, f)
                 # return
-            elif ("learning" in model_details) and model_details["learning"] == "feature":
-                aggregate_stats[model] = compute_feature_unary_stats(model_dir, device, model_details, model)
-            elif ("learning" in model_details) and model_details["learning"] == "dual_cl":
-                aggregate_stats[model] = compute_unary_dual_cl_stats(model_dir, device, model_details, model)
             else:
                 aggregate_stats[model] = compute_unary_stats(model_dir, device, model_details, model)
 

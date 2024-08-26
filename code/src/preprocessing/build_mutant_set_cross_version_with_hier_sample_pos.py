@@ -332,7 +332,7 @@ def subsample_test_mutants(mutants, test_map, new_mutants, i, codet5_tokenizer, 
 
 def main(args, codet5_tokenizer, codebert_tokenizer, subset):
     # output dir
-    set_name = "cross_version_base_set_soda"
+    set_name = "cross_version_base_set"
     
     if subset == "train":
         version_dict = Macros.train_versions

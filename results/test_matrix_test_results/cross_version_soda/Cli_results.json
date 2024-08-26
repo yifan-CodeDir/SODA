@@ -1,5 +1,5 @@
 {
-    "codet5_contrastive_cross_version_token_diff_hier_rand20_sample": {
+    "cross_version_soda": {
         "val_kill_prec": 0.8449328449328449,
         "val_kill_recall": 0.8213649851632048,
         "val_kill_f1": 0.832982244959374,

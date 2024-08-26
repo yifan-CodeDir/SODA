@@ -299,20 +299,20 @@ def main(args, codet5_tokenizer, codebert_tokenizer):
     with open(args.test_file, "rb") as f:
         test_map = pickle.load(f) 
     
-    fold_num = 5
+    for fold_num in range(1,6):
 
-    set_name = f"cross_project_suite_base_set_fold{fold_num}"
-    
-    (Macros.defects4j_root_dir / set_name / "train").mkdir(exist_ok=True, parents=True)
-    (Macros.defects4j_root_dir / set_name / "val").mkdir(exist_ok=True, parents=True)
-    (Macros.defects4j_root_dir / set_name / "test").mkdir(exist_ok=True, parents=True)
+        set_name = f"cross_project_suite_base_set_fold{fold_num}"
+        
+        (Macros.defects4j_root_dir / set_name / "train").mkdir(exist_ok=True, parents=True)
+        (Macros.defects4j_root_dir / set_name / "val").mkdir(exist_ok=True, parents=True)
+        (Macros.defects4j_root_dir / set_name / "test").mkdir(exist_ok=True, parents=True)
 
-    mu_train, mu_val, mu_test = split_cp_fold(mutants, fold_num) 
-    
-    # mu_train, mu_val, mu_test = split_cp(mutants)
-    subsample_mutants(mu_train, test_map, codet5_tokenizer, codebert_tokenizer, "train", args.model, set_name)
-    subsample_mutants(mu_val, test_map, codet5_tokenizer, codebert_tokenizer, "val", args.model, set_name)
-    subsample_test_mutants(mu_test, test_map, codet5_tokenizer, codebert_tokenizer, "test", args.model, set_name)
+        mu_train, mu_val, mu_test = split_cp_fold(mutants, fold_num) 
+        
+        # mu_train, mu_val, mu_test = split_cp(mutants)
+        subsample_mutants(mu_train, test_map, codet5_tokenizer, codebert_tokenizer, "train", args.model, set_name)
+        subsample_mutants(mu_val, test_map, codet5_tokenizer, codebert_tokenizer, "val", args.model, set_name)
+        subsample_test_mutants(mu_test, test_map, codet5_tokenizer, codebert_tokenizer, "test", args.model, set_name)
 
 
 if __name__ == "__main__":

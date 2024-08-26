@@ -1,5 +1,5 @@
 {
-    "cross_project_codet5_contrastive_token_diff_noSCL_hier_rand20_sample_fold4": {
+    "cross_project_soda_fold4": {
         "val_kill_prec": 0.6075374602694112,
         "val_kill_recall": 0.4463471589013677,
         "val_kill_f1": 0.5146153846153846,

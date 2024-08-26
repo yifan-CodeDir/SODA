@@ -172,7 +172,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", type=str, choices=["codebert", "codet5"], default="codet5")
     parser.add_argument("--src_set", help="source set", default="cross_version_base_set")
-    parser.add_argument("--dst_set", help="dest set", default="cross_version_codet5_token_diff")
+    parser.add_argument("--dst_set", help="dest set", default="cross_version_soda")
 
     args = parser.parse_args()
 

@@ -132,8 +132,8 @@ def main(args, tokenizer):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", type=str, choices=["codebert", "codet5"], default="codebert")
-    parser.add_argument("--src_set", help="source set", default="base_set_suite")
-    parser.add_argument("--dst_set", help="dest set", default="codebert_token_diff_suite")
+    parser.add_argument("--src_set", help="source set", default="cross_version_suite_base_set")
+    parser.add_argument("--dst_set", help="dest set", default="cross_version_suite_codebert_token_diff")
 
     args = parser.parse_args()
 
