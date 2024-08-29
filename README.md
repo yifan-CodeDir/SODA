@@ -1,6 +1,6 @@
 # SODA
 ----------
-Welcome to the website of SODA. This repository contains a replication package for a research paper submitted to ASE 2024. We provide our code, data and result for the ease of replicating our experiments.
+Welcome to the website of SODA. This repository contains a replication package for a research paper accepted by [ASE 2024](https://conf.researchr.org/home/ase-2024). We provide our code, data and result for the ease of replicating our experiments.
 
 - **Code** : We provide all the code needed to replicate our experiment in the `code` subdirectory. We also provide the guidance to run our code in the following page.
 - **Data** : We provide our data in the `data.zip`
