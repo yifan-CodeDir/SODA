@@ -1,4 +1,4 @@
-The F-beta value results for the cross-project scenario are shown as follows:
+The F-beta value results for the cross-project scenario are shown as follows (f-beta value for Table 3):
 
 ![alt text](./figs/cp-f-beta.png "Cross-project F-beta values")
 
