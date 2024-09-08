@@ -1,9 +1,9 @@
 # SODA
 ----------
-Welcome to the website of SODA. This repository contains a replication package for our research paper named **"Spotting Code Mutation for Predictive Mutation Testing"** accepted by [ASE 2024](https://conf.researchr.org/home/ase-2024). We provide our code, data and result for the ease of replicating our experiments.
+Welcome to the website of SODA. This repository contains a replication package for our research paper named **"Spotting Code Mutation for Predictive Mutation Testing"** accepted by [ASE 2024](https://conf.researchr.org/home/ase-2024). We provide our code, data and results for the ease of replicating our experiments.
 
 - **Code** : We provide all the code needed to replicate our experiment in the `code` subdirectory. We also provide the guidance to run our code in the following page.
-- **Data** : We provide our data in the `code/data.zip`. We also provide the raw logs produced by Major in `raw_data`.
+- **Data** : We provide the processed data in `code/data.zip`. We also provide the raw logs produced by Major in `raw_data`.
 - **Result**: We provide all our results in the `results` subdirectory. In particular, we provide results for all the three models (Seshat, MutationBERT, SODA) in cross-version and cross-project scenarios with two granularities (test matrix and test suite).
 - **Additional Result**: We provide some additional results in markdown files in the `results` subdirectory, e.g., confirmation check, some mispredicted examples, evaluation on newer versions, F-beta scores, Venn diagrams, etc.
 
