@@ -1,4 +1,4 @@
-The details of the version for each project we use is as follows:  
+The details of the newer version for each project we use is as follows:  
 
 | Project     | Commit ID   | Date       |
 |-------------|-------------|------------|
@@ -8,6 +8,9 @@ The details of the version for each project we use is as follows:
 | jfreechart        | 2a8ded9   | 2020-10-03 |
 | commons-csv    | 6aa1756      | 2019-09-29 |
 | commons-lang   | eb5b11a      | 2018-09-19 |
+
+The kill, recall, and F1-score for cross-version scenario (evaluated with models trained in RQ1) are shown as follows:
+![alt text](./figs/new-version-cv.png "Newer versions cv")
 
 The f-beta score for cross-version scenario (evaluated with models trained in RQ1) are shown as follows:
 ![alt text](./figs/new-version-cv-f-beta.png "Newer versions cv F-beta values")

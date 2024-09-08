@@ -1,11 +1,11 @@
 # SODA
 ----------
-Welcome to the website of SODA. This repository contains a replication package for a research paper accepted by [ASE 2024](https://conf.researchr.org/home/ase-2024). We provide our code, data and result for the ease of replicating our experiments.
+Welcome to the website of SODA. This repository contains a replication package for our research paper named **"Spotting Code Mutation for Predictive Mutation Testing"** accepted by [ASE 2024](https://conf.researchr.org/home/ase-2024). We provide our code, data and result for the ease of replicating our experiments.
 
 - **Code** : We provide all the code needed to replicate our experiment in the `code` subdirectory. We also provide the guidance to run our code in the following page.
 - **Data** : We provide our data in the `data.zip`
 - **Result**: We provide all our results in the `results` subdirectory. In particular, we provide results for all the three models (Seshat, MutationBERT, SODA) in cross-version and cross-project scenarios with two granularities (test matrix and test suite).
-- **Additional Result**: We provide some additional results in markdown files in the `results` subdirectory, e.g., confirmation check, some mispredicted examples, evaluation on newer versions, etc.
+- **Additional Result**: We provide some additional results in markdown files in the `results` subdirectory, e.g., confirmation check, some mispredicted examples, evaluation on newer versions, F-beta scores, Venn diagrams, etc.
 
 ----------
 ## Environment Preparation
@@ -14,9 +14,12 @@ Welcome to the website of SODA. This repository contains a replication package f
 - `conda activate soda`
 ----------
 ## Data Preparation
-We provide the processed data here.
+We provide the processed data in `code/data.zip`, you can directly unzip it and use it for the following training or evaluation process.
 - `cd code`
 - `unzip data.zip`
+  
+For ones who are interested in richer information, we also provide the raw logs in `raw_data/major_raw_logs.tar.gz`. This compressed file contains the raw logs produced by Major including `covMap.csv`, `killMap.csv`, `mutants.log`, `testMap.csv`. We provide the raw logs not only for the versions we used in Defects4J, but also for some newer versions whose details are given in `results/newer_version.md`.
+
 ----------
 ## Preprocessing the data and training models
 ## Test matrix-level
