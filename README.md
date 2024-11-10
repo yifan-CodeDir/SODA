@@ -145,3 +145,14 @@ For ones who are interested in richer information, we also provide the raw logs 
 - `cd src/evaluation`
 - To run test matrix-level prediction: `python3 eval_models_cross_project.py` or `python3 eval_models_cross_version.py`
 - To run test suite-level prediction: `python3 eval_suite_cross_project.py` or `python3 eval_suite_cross_version.py`
+-----------
+## Citing
+```
+@inproceedings{zhao2024spotting,
+  title={Spotting Code Mutation for Predictive Mutation Testing},
+  author={Zhao, Yifan and Chen, Yizhou and Sun, Zeyu and Liang, Qingyuan and Wang, Guoqing and Hao, Dan},
+  booktitle={Proceedings of the 39th IEEE/ACM International Conference on Automated Software Engineering},
+  pages={1133--1145},
+  year={2024}
+}
+```
